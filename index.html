@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Broadcasting Examples</title>
+    <!-- Include Plyr styles -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" />
+</head>
+<body>
+    <h1>Example 1: Using the 'video' Element with Multiple Sources</h1>
+    <video width="640" height="360" controls>
+        <source src="video.mp4" type="video/mp4">
+    </video>
+
+    <h1>Example 2: Using YouTube Video Embedding</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/watch?v=2Vv-BfVoq4g" frameborder="0" allowfullscreen></iframe>
+
+    <h1>Example 3: Using JavaScript Library (Plyr)</h1>
+
+    <video id="plyr-video" controls crossorigin playsinline>
+        <source src="video.mp4" type="video/mp4" />
+    </video>
+
+ 
+    <script src="https://cdn.plyr.io/3.6.8/plyr.js"></script>
+
+    <script>const player = new Plyr('#plyr-video');</script>
+</body>
+</html>
+
